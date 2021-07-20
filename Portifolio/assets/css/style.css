@@ -40,7 +40,7 @@ header#inicio{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 6rem;
 }
 header#inicio div#img-dev{
     display: flex;
@@ -64,7 +64,7 @@ section#sobre-mim{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: .5rem 4rem .5rem 4rem;
     background-color: rgb(95, 0, 0);
     
    
@@ -78,11 +78,11 @@ section#sobre-mim div p{
 
 }
 section#sobre-mim div img{
-    width: 70%;
-    border: 5px solid;
+    width: 20rem;
+    /*border: 5px solid;
     border-radius: 30%;
     transform: scaleX(-1);
-
+*/
 }
 section#projetos{
     display: flex;
@@ -168,3 +168,85 @@ section#habilidades div span#python{
         border-radius: 1rem;
         width: 30%;
      }
+   section#contato {
+        padding: 3rem 10rem 3rem 10rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section#contato div#sociais{
+        width: 100%;
+    }
+    section#contato div#sociais div#icons{
+        display: flex;
+        justify-content: center;
+    }
+    section#contato div#sociais h3{
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+
+    }
+     section#contato div#sociais div#icons a{
+     text-decoration: none; /*tira o sublinhado de toda decoração o link*/
+     padding: 2rem;
+     font-size: 3rem;
+     color: rgb(105, 2, 2); 
+     transition: color .4s ease-out ;  
+    }
+    section#contato div#sociais div#icons a:hover{
+    color: red;
+         }
+    section#contato div#sociais div#icons a i{
+        transition: all .4s ease-out;
+    }     
+    section#contato div#sociais div#icons a i:hover{
+    transform: scale(1.3);
+    }     
+    section#contato div#form{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    section#contato div#form h3{
+    width:100% ;
+    text-align: center;   
+    font-size: 2rem;
+    margin-bottom: 2rem; 
+    }
+    section#contato div#form form#action{
+        width: 50%;
+        
+       }
+    section#contato div#form form input,textarea{
+        width: 100%;
+        padding: .5rem;
+        font-size: 1.2rem;
+        border: 1px solid #ccc;
+        margin-top: .5rem;
+        margin-bottom: 1rem;
+        outline: none;
+    }
+    section#contato div#form form label{
+        font-size: 1.2rem;
+       
+    }
+    section#contato div#form form button{
+        border: 1px solid rgb(109, 1, 1);
+        background-color: #fff;
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+        font-size: .8vw;
+        font-weight: 600;
+        border-radius: .5rem;
+        display: block;
+        margin: auto;
+        width: 40%;
+        cursor: pointer;
+        transition: .6s ease-out;
+    }
+    section#contato div#form form button:hover{
+        background-color: rgb(109, 1, 1);
+        color: #fff;
+        transform: scale(1.2);
+    }
